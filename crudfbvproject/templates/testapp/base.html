@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/demo.css'%}">
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Employee Information Table"></a>
+
+            </div>
+            <ul class="nav navbar-nav navbar-left navbar-brand">
+                <li><a href="#">BHARATI TECH</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">signup</a></li>
+                <li><a href="/accounts/login/">Login</a></li>
+                <li><a href="/accounts/Logout">Logout</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    {%block body_block%}
+    {%endblock%}
+</body>
+</html>

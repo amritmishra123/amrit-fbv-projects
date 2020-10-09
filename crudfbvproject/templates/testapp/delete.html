@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+<h1>Employee Record delete form!!</h1><hr>
+<form method="POST">
+    {%csrf_token%}
+
+    <input type="submit"  name="" class="btn btn-danger btn-lg" value="Delete Record!!">
+</form>
+{%endblock%}
